@@ -13,6 +13,5 @@ function deleteFromObjectByKey(object, key) {
 }
 
 function destructivelyDeleteFromObjectByKey(object, key) {
-  object = _.omit(object, 'key');
-  return object;
+  return object.pop(key);
 }
